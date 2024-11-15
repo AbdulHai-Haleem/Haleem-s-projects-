@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #f1f1f1;
+            max-width: 1440px;
+        }
+
+        #rightside {
+            display: grid;
+            grid-template-areas: 'section section aside'
+                'section section aside'
+                'footer footer footer';
+            margin: 60px 100px 60px 10px;
+            grid-gap: 20px;
+            max-width: 50%;
+
+
+
+        }
+
+        section {
+            grid-area: section;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+            grid-template-rows: auto 200px;
+
+
+        }
+
+        aside {
+            grid-area: aside;
+            text-align: center;
+            align-content: center;
+            grid-gap: 20px;
+            background-color: #dcd1fc;
+            border-radius: 10px;
+
+        }
+
+        aside>div>img {
+            max-width: 80%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        footer {
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: 32% 65%;
+            grid-gap: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        div {
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        img {
+
+        }
+
+        .one {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .one>img {
+            max-width: 60%;
+            margin: auto;
+
+        }
+
+        .two {
+            display: flex;
+            background-color: rgba(138, 43, 226, 1);
+            padding: 10px;
+            align-content: center;
+            align-items: center;
+
+        }
+
+        .two>img {
+            display: inline-block;
+            max-width: 35%;
+            margin-left: 0%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        #leftside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 60px 10px 60px 100px;
+            max-width: 15%;
+        }
+        #leftside>div{
+            height: 45%;
+        }
+        .first{
+            text-align: center;
+            background-color: #faeee2;
+            padding: 0px 20px;
+            align-items: center;
+            align-content: center;
+        }
+        .first>h1{
+            
+        }
+        .second{
+            padding: 20px;
+            background-color: #ffcc69;
+            text-align: center;
+        }
+        .second>img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            
+
+        }
+        @media screen and (max-width:400px){
+            #container{
+                width: 100%;
+                padding: 3px;
+                text-align: center;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            #rightside{
+                display: flex;
+                flex-direction: column;
+                max-width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+            }
+            
+            section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+            }
+            #leftside{
+                display: flex;
+                flex-direction: column;
+                max-width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+            }.second>img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            height: 150px;
+            object-fit: cover;
+
+        }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="rightside">
+            <section>
+                <div style="display: grid;
+                            grid-column: 1/span 2;
+                            background-color: rgba(138, 43, 226, 1);
+                            text-align: center;
+                            padding: 20px 20px;">
+                    <h1 style="font-size: 40px;
+                    margin: 0%;
+                    color:#fffffb;">Social Media <strong style="color: #ffcc69;">10x</strong> Faster with AI</h1>
+
+                    <p style="color: white;"> <img id="fivestar" src="assets/images/illustration-five-stars.webp" alt="" style="width: 25%;">
+                        <br>Over 4000 5-Star
+                        reviews</p>
+                </div>
+
+                <div style="background-color: white;
+                padding: 10px;">
+                    <img style="height: 60px;
+                    max-width: 100%;
+                    object-fit: cover;
+                    " src="assets/images/illustration-multiple-platforms.webp" alt="">
+                    <h1 style="max-width: 160px;
+                    margin: 0%;">Manage multiple accounts and platforms</h1>
+                </div>
+                <div style="background-color: #ffcc69;
+                padding: 10px 20px;">
+                    <h1 style="margin: 0%;
+                    max-width: 160px;">Maintain a consistent posting schedule</h1>
+                    <img id="sch1" src="assets/images/illustration-consistent-schedule.webp" alt="" style="display: block;
+                                                border-radius: 10px;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 100%;
+                                                height: 90px;
+                                                object-fit: cover;">
+                </div>
+
+            </section>
+
+            <aside>
+                <div>
+                    <h1>Schedule to social Media
+                    </h1>
+                    <img src="assets/images/illustration-schedule-posts.webp" alt="" style="width: 90%;">
+                    <p>Optimize post timings to publish content at the perfect time for you audience</p>
+                </div>
+
+            </aside>
+
+            <footer>
+                <div class="footer one">
+                    <h1>>56%</h1>
+                    <p>faster audionce growth</p>
+                    <img src="assets/images/illustration-audience-growth.webp" alt="">
+                </div>
+                <div class="footer two">
+                    <img src="assets/images/illustration-grow-followers.webp" alt="">
+                    <h1 style="color: #fffffb;">Grow followers with non-stop content.</h1>
+                </div>
+
+            </footer>
+        </div>
+        <div id="leftside">
+            <div class="lefts first">
+                <h1>Create and schedule content <strong style="color: blueviolet;">quicker.</strong></h1>
+                <img src="assets/images/illustration-create-post.webp" alt="" style="width: 80%;
+                object-fit: cover;
+                margin-left: auto;
+                margin-right: auto;">
+            </div>
+            <div class="lefts second">
+                <h1>Write your content using AI.</h1>
+                <img src="assets/images/illustration-ai-content.webp" alt="" >
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
